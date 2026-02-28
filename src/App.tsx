@@ -120,7 +120,7 @@ export default function App() {
               <div className="text-sm text-white/60">GitHub</div>
               <div className="mt-1 font-semibold">github.com/Vishaltiklu12</div>
             </a>
-            <a className="glass neon rounded-2xl p-5 hover:bg-white/6 transition" href="https://linkedin.com/in/vishalkasapurambodagala" target="_blank" rel="noreferrer">
+            <a className="glass neon rounded-2xl p-5 hover:bg-white/6 transition" href="https://www.linkedin.com/in/vishal-k-b-60a7631b2/" target="_blank" rel="noreferrer">
               <div className="text-sm text-white/60">LinkedIn</div>
               <div className="mt-1 font-semibold">linkedin.com/in/vishalkasapurambodagala</div>
             </a>
