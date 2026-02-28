@@ -30,7 +30,7 @@ function Icon({ accent }: { accent: SocialAccent }) {
 }
 
 const SOCIALS: SocialItem[] = [
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/vishalkasapurambodagala', accent: 'linkedin' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/vishal-k-b-60a7631b2/', accent: 'linkedin' },
   { name: 'GitHub', href: 'https://github.com/Vishaltiklu12', accent: 'github' },
   { name: 'Email', href: 'mailto:vishalkasapurambodagala@gmail.com', accent: 'gmail' },
 ]
