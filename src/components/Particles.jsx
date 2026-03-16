@@ -1,9 +1,7 @@
 import { useEffect, useRef } from 'react'
 
-type Dot = { x: number; y: number; vx: number; vy: number; r: number; a: number }
-
 export default function Particles() {
-  const ref = useRef<HTMLCanvasElement | null>(null)
+  const ref = useRef(null)
 
   useEffect(() => {
     const canvas = ref.current
@@ -16,7 +14,8 @@ export default function Particles() {
     let w = 0
     let h = 0
     const dpr = Math.min(window.devicePixelRatio || 1, 2)
-    let dots: Dot[] = []
+    /** @type {{x:number,y:number,vx:number,vy:number,r:number,a:number}[]} */
+    let dots = []
     let raf = 0
 
     const resize = () => {
@@ -101,11 +100,5 @@ export default function Particles() {
     }
   }, [])
 
-  return (
-    <canvas
-      ref={ref}
-      className="absolute inset-0 h-full w-full"
-      aria-hidden="true"
-    />
-  )
+  return <canvas ref={ref} className="absolute inset-0 h-full w-full" aria-hidden="true" />
 }
