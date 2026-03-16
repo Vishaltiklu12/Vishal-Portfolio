@@ -39,3 +39,4 @@ npm run preview
 
 - `public/resume.pdf` is already wired to the Resume button.
 - The Three.js orb is lightweight and respects `prefers-reduced-motion`.
+ 
