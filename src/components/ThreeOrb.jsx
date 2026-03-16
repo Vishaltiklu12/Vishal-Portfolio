@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import * as THREE from 'three'
 
 export default function ThreeOrb() {
-  const mountRef = useRef<HTMLDivElement | null>(null)
+  const mountRef = useRef(null)
 
   useEffect(() => {
     const mount = mountRef.current
@@ -76,16 +76,16 @@ export default function ThreeOrb() {
     let lastX = 0
     let lastY = 0
 
-    const onDown = (e: PointerEvent) => {
+    const onDown = (e) => {
       dragging = true
       lastX = e.clientX
       lastY = e.clientY
-      ;(e.target as HTMLElement).setPointerCapture?.(e.pointerId)
+      ;e.target.setPointerCapture?.(e.pointerId)
     }
     const onUp = () => {
       dragging = false
     }
-    const onMove = (e: PointerEvent) => {
+    const onMove = (e) => {
       if (!dragging) return
       const dx = e.clientX - lastX
       const dy = e.clientY - lastY
