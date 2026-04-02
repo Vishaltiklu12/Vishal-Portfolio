@@ -76,7 +76,7 @@ const stackGroups = [
   {
     title: 'AI + Immersive',
     icon: BrainCircuit,
-    items: ['OpenAI APIs', 'Claude AI', 'LLM integrations', 'Workflow automation', 'Figma', 'Design Systems', 'Unity', 'VR', 'Accessibility'],
+    items: ['TensorFlow','OpenAI APIs', 'PyTorch', 'Claude AI', 'LLM integrations', 'Workflow automation', 'Figma', 'Design Systems', 'Unity', 'VR', 'Accessibility'],
   },
 ]
 
